@@ -11,4 +11,6 @@ class MovieRepositoryImpl extends MoviesRepository{
   Future<List<Movie>> getNowPlaying({int page = 1}) {
     return datasource.getNowPlaying(page: page);
   }
+
+  getNowPlayingMovies({required int page}) {}
 }
